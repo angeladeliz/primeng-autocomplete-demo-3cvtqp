@@ -1,0 +1,13 @@
+<h5>Multiple</h5>
+<span class="p-fluid">
+  <p-autoComplete
+    [(ngModel)]="selectedCountries"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
+    field="name"
+    [multiple]="true"
+    (keypress)="this.onKeypress($event)"
+    [forceSelection]="true"
+  >
+  </p-autoComplete>
+</span>
